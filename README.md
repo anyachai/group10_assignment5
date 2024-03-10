@@ -1,3 +1,5 @@
+# group10_assignment5
+
 How to run the animation:
 
 Ensure that the following class and code files are present in processing directory before you begin the animation. 
@@ -20,4 +22,4 @@ Rock1.mtl
 Rock-Texture-Surface.jpg
 
 Once you have confirmed that you have all of these files, hit the run button to see the animation.
-# group10_assignment5
+
