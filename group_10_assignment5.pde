@@ -3,8 +3,10 @@ Plant plant1, plant2, plant3, plant4;
 Coral coral1, coral2;
 Fishes fish_group;
 PVector[] positions;
-BigRock rock;
-LittleRock[] littleRocks = new LittleRock[5];
+BigRock rock1, rock2, rock3;
+LittleRock[] littleRocksA = new LittleRock[10];
+LittleRock[] littleRocksB = new LittleRock[7];
+LittleRock[] littleRocksC = new LittleRock[5];
 color sea, sand;
 
 void setup() {
@@ -27,11 +29,18 @@ void setup() {
   coral2 = new Coral(650, -500, 400, 12);
   
   // Setup Rocks
-  rock = new BigRock(350, 700, -450, 20);
-  for (int i = 0; i < 5; i++) {
-    littleRocks[i] = new LittleRock(350, 700, -450, 10, 100, .6283 * i * 2);
+  rock1 = new BigRock(350, 700, -450, 12);
+  for (int i = 0; i < 10; i++) {
+    littleRocksA[i] = new LittleRock(350, 700, -450, 5, 100, .6283 * i);
   }
-  
+  rock2 = new BigRock(250, 700, -150, 15);
+  for (int i = 0; i < 7; i++) {
+    littleRocksB[i] = new LittleRock(250, 700, -150, 7, 80, .4487 * i * 2);
+  }
+  rock3 = new BigRock(600, 700, -650, 10);
+  for (int i = 0; i < 5; i++) {
+    littleRocksC[i] = new LittleRock(600, 700, -650, 5, 50, .6283 * i * 2);
+  }
   // Setup the fish
   PShape fishShape = loadShape("fish.obj");
   PImage fishTexture = loadImage("fish.png");
@@ -81,8 +90,16 @@ void draw() {
   
   fish_group.display();
   
-  rock.display();
+  rock1.display();
+  rock2.display();
+  rock3.display();
+  for (int i = 0; i < 10; i++) {
+    littleRocksA[i].display();
+  }
+  for (int i = 0; i < 7; i++) {
+    littleRocksB[i].display();
+  }
   for (int i = 0; i < 5; i++) {
-    littleRocks[i].display();
+    littleRocksC[i].display();
   }
 }
