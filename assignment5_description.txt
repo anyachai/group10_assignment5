@@ -1,0 +1,18 @@
+WHAT WAS THE ANIMATION?
+The animation is a depiction of the ocean, with a school of fish, some dancing coral, and some fun rocks that spin around every so often.
+
+More specifically, there is a school of fish that swims from left to right on screen, with a leader fish and some follower fish. There are a few groups of rocks that have a leader rock that is disturbed and levitates, with groups of surrounding rocks that levitate in response. Finally, there are two different kinds of plants that move, with branches that move based on the motion of the main plant.
+
+INCLUDED CLASSES
+Rocks (Ben):
+-The Rock class is the parent class for the BigRock class and the LittleRock class
+-The BigRocks are at the center of the groups of rocks, these translate up and down.
+-The LittleRocks translate up and down and rotate around the BigRocks after the BigRocks fall.
+-The .jpg, .obj, and .mtl files for these classes were obtained from https://free3d.com/3d-model/low-poly-rock-4631.html
+
+Fish (Anya):
+
+Plants (Ryan);
+
+UNEXPECTED CHALLENGES
+-The texture file for the rock was unexpectedly large, which caused animation to load slowly or not load at all on slower machines. We fixed this by decreasing the size of the file.
