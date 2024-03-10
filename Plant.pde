@@ -4,7 +4,7 @@ class Plant {
   float h;
   int branch_num;
   float swivel_init = random(6.28);
-  float swivel_rate = random(0.02,0.05);
+  float swivel_rate = random(0.02,0.04);
   float[] branch_pos;
   float[] branch_len;
   float[] sway_init;

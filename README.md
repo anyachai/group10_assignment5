@@ -21,5 +21,5 @@ Rock1.obj
 Rock1.mtl
 Rock-Texture-Surface.jpg
 
-Once you have confirmed that you have all of these files, hit the run button to see the animation.
+Once you have confirmed that you have all of these files, hit the run button to see the animation. The animation may take a few seconds to start depending on the condition of your computer.
 

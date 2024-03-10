@@ -1,7 +1,7 @@
 WHAT WAS THE ANIMATION?
 The animation is a depiction of the ocean, with a school of fish, some dancing coral, and some fun rocks that spin around every so often.
 
-More specifically, there is a school of fish that swims from left to right on screen, with a leader fish and some follower fish. There are a few groups of rocks that have a leader rock that is disturbed and levitates, with groups of surrounding rocks that levitate in response. Finally, there are two different kinds of plants that move, with branches that move based on the motion of the main plant.
+More specifically, there is a school of fish that swims from left to right on screen, with a leader fish and some follower fish. There are a few groups of rocks that have a leader rock that is disturbed and levitates, with groups of surrounding rocks that levitate in response. Finally, there are two different kinds of plants that move: plants and coral. While both swivel around their base, the latter in addition also  has branches that sway up and down independently from the motion of the main plant.
 
 INCLUDED CLASSES
 Rocks (Ben):
@@ -12,7 +12,13 @@ Rocks (Ben):
 
 Fish (Anya):
 
-Plants (Ryan);
+Plants (Ryan):
+-The plant class is the parent class of the coral class. (Yes, I know that corals are not plants. - Ryan) 
+-Both the plants and coral swivel around their base.
+-In addition to the swiveling, coral has branches that are generated along the trunk of the coral at random positions and angles. Each branch sway up and down independently of each other and from the trunk. 
+-In other words, the swiveling of the trunk is the first level animation while the swaying of the branches are second level animations.
+-Lastly, the color of the coral continuously changes over time, which is another 2nd level animation.
+-All of the plant & coral textures are generated within Processing itself.
 
 UNEXPECTED CHALLENGES
 -The texture file for the rock was unexpectedly large, which caused animation to load slowly or not load at all on slower machines. We fixed this by decreasing the size of the file.
