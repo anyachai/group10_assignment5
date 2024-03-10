@@ -1,4 +1,6 @@
 // Initialize variables
+Plant plant1, plant2, plant3, plant4;
+Coral coral1, coral2;
 Fishes fish_group;
 PVector[] positions;
 BigRock rock;
@@ -10,6 +12,13 @@ void setup() {
   size(700, 700, P3D);
   seaAndSand();
   frameRate(60); // Necessary to run on M2 Pro MBP
+  
+  // Setup plants and coral
+  plant1 = new Plant(60, -50, 275, 0);
+  plant2 = new Plant(150, -100, 200, 0);
+  plant3 = new Plant(580, -50, 225, 0);
+  plant4 = new Plant(670, -100, 300, 0);
+  coral1 = new Coral(125, -500, 400, 1);
   
   // Setup Rocks
   rock = new BigRock(350, 700, -450, 20);
@@ -54,6 +63,13 @@ void seaAndSand() {
 
 void draw() {
   seaAndSand();
+  
+  plant1.display();
+  plant2.display();
+  plant3.display();
+  plant4.display();
+  coral1.display();
+  
   fish_group.display();
   rock.display();
   for (int i = 0; i < 5; i++) {
