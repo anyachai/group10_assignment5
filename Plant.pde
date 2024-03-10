@@ -38,13 +38,10 @@ class Plant {
   }
   
   void display() {
-    if (branch_num > 0) {
-      fill(#efbbff);
-      stroke(#660066);
-    } else {
-      fill(#41980a);
-      stroke(#136d15);
-    }
+    if (branch_num == 0) {
+      fill(120, 100, 75);
+      stroke(120, 100, 50);
+    } 
     
     pushMatrix();
     translate(x, 700, z);

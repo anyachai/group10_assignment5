@@ -5,13 +5,18 @@ Fishes fish_group;
 PVector[] positions;
 BigRock rock;
 LittleRock[] littleRocks = new LittleRock[5];
-color sea = color(45, 147, 234);
-color sand = color(210, 211, 154);
+color sea, sand;
 
 void setup() {
   size(700, 700, P3D);
-  seaAndSand();
   frameRate(60); // Necessary to run on M2 Pro MBP
+  
+  // Using HSB instead of RGB for Plants & Coral
+  colorMode(HSB, 360, 100, 100);
+  sea = color(208, 80.8, 91.8);
+  sand = color(61, 27, 82.7);
+  
+  seaAndSand();
   
   // Setup plants and coral
   plant1 = new Plant(60, -50, 275, 0);
@@ -69,10 +74,13 @@ void draw() {
   plant2.display();
   plant3.display();
   plant4.display();
+  coral1.changeColor();
   coral1.display();
+  coral2.changeColor();
   coral2.display();
   
   fish_group.display();
+  
   rock.display();
   for (int i = 0; i < 5; i++) {
     littleRocks[i].display();
