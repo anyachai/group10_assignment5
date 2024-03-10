@@ -5,12 +5,14 @@ More specifically, there is a school of fish that swims from left to right on sc
 
 INCLUDED CLASSES
 Rocks (Ben):
--The Rock class is the parent class for the BigRock class and the LittleRock class
+-The Rock class is the parent class for the BigRock class and the LittleRock class.
 -The BigRocks are at the center of the groups of rocks, these translate up and down.
 -The LittleRocks translate up and down and rotate around the BigRocks after the BigRocks fall.
 -The .jpg, .obj, and .mtl files for these classes were obtained from https://free3d.com/3d-model/low-poly-rock-4631.html
 
 Fish (Anya):
+-Animation is of a small school of fish that ‘swims’ across the canvas.
+-Each fish is offset from a leader fish to travel together. 
 
 Plants (Ryan):
 -The plant class is the parent class of the coral class. (Yes, I know that corals are not plants. - Ryan) 
@@ -22,3 +24,4 @@ Plants (Ryan):
 
 UNEXPECTED CHALLENGES
 -The texture file for the rock was unexpectedly large, which caused animation to load slowly or not load at all on slower machines. We fixed this by decreasing the size of the file.
+-Some challenges with the fish were to get textures to show correctly, and to calculate rotations with the obj file.
