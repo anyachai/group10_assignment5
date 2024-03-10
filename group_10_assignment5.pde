@@ -18,7 +18,8 @@ void setup() {
   plant2 = new Plant(150, -100, 200, 0);
   plant3 = new Plant(580, -50, 225, 0);
   plant4 = new Plant(670, -100, 300, 0);
-  coral1 = new Coral(125, -500, 400, 1);
+  coral1 = new Coral(50, -500, 400, 10);
+  coral2 = new Coral(650, -500, 400, 12);
   
   // Setup Rocks
   rock = new BigRock(350, 700, -450, 20);
@@ -69,6 +70,7 @@ void draw() {
   plant3.display();
   plant4.display();
   coral1.display();
+  coral2.display();
   
   fish_group.display();
   rock.display();
